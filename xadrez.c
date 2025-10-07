@@ -44,6 +44,28 @@ int main() {
         j++;
 
     } while (j <= casasRainha);
+
+    // Simulação do Cavalo
+ 
+    // Cavalo se move 2 casas para baixo e 1 casa para a esquerda
+    // Cada movimento em L será repetido 3 vezes, por exemplo
+
+    int movimentosCavalo = 3; // número de vezes que o cavalo fará o "L"
+
+    printf("\nMovimento do Cavalo:\n");
+
+    for (int k = 1; k <= movimentosCavalo; k++) {
+        int passo = 1;
+
+        // Loop while para as duas casas para baixo
+        while (passo <= 2) {
+            printf("Baixo\n");
+            passo++;
+        }
+
+        // Movimento para a esquerda
+        printf("Esquerda\n");
+    }
     
     return 0;
 }
